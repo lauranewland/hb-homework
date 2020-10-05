@@ -60,28 +60,27 @@
 #           f"expected ${customer6_expected:.2f}"
 #           )
 
+def price_checker(filename):
+    """this function takes the customer orders file and checks if the customers total against the expected total. 
+    If the totals do not match it will print out the users name and what they paid vs what they were exected to pay"""
 
-
-def overpaid_checker(filename):
-    
     customer_orders = open(filename)
     
     melons_cost = 1.00
 
     for line in customer_orders:
+        line = line.strip()
         word = line.split("|")
 
-        customer_name = word[1]     #Andrea Cruz
-        melons_purchased = word[2]  #12
-        customer_paid = word[3]     #12.00
-        expected_price = melons_cost * float(melons_purchased)
+        customer_name = word[1]     
+        melons_purchased = int(word[2])  #this value comes in as a string and will need to be converted to an int
+        customer_paid = float(word[3])     #this value comes in as a string and will need to be converted to an int
+        expected_total = melons_cost * melons_purchased 
        
-
-        if expected_price != customer_paid:
-            print(f"{customer_name} paid {customer_paid}, when he was expected to pay {expected_price}")
+        if customer_paid != expected_total:
+            print(f"{customer_name} paid ${customer_paid}, the customer was expected to pay ${expected_total:.2f}")
     
     customer_orders.close()
 
-
-overpaid_checker("customer-orders.txt")
+price_checker("customer-orders.txt")
 
