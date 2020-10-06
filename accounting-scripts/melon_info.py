@@ -9,8 +9,8 @@ def print_melon(melon):
     
     for key, value in melon.items():
         print(key)
-        for value1, value2 in value.items():
-            print(f"     {value1} : {value2}")
+        for attribute, value2 in value.items():
+            print(f"     {attribute} : {value2}")
             
 
 
