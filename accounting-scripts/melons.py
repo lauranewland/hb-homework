@@ -1,3 +1,41 @@
+melon = {
+    'Honeydew' : {
+        "price" : 0.99,
+        "seedlessness" : True,
+        "flesh_color" : "Green",
+        "rind_color" : "Lime",
+        "average_weight" : 1.00
+    },
+     'Crenshaw' : {
+        "price" : 2.00,
+        "seedlessness" : False,
+        "flesh_color" : "Yellow Green",
+        "rind_color" : "Yellow",
+        "average_weight" : 1.25
+     },
+    'Crane' : {
+        "price" : 2.50,
+        "seedlessness" : False,
+        "flesh_color" : "Orange",
+        "rind_color" : "Orange",
+        "average_weight" : 1.50
+    },
+    'Casaba' : {
+        "price" : 2.50,
+        "seedlessness" : False,
+        "flesh_color" : "Yellow",
+        "rind_color" : "White",
+        "average_weight" : 1.25
+    },
+    'Cantaloupe' : {
+        "price" : 0.99,
+        "seedlessness" : False,
+        "flesh_color" : "Tan",
+        "rind_color" : "Orange",
+        "average_weight" : 1.75   
+    }
+}
+
 melon_names = {
     1: 'Honeydew',
     2: 'Crenshaw',
@@ -21,3 +59,9 @@ melon_seedlessness = {
     4: False,
     5: False,
 }
+
+
+
+
+
+
