@@ -34,9 +34,8 @@ def get_customers_from_file(customer_file_path):
         name, email, street, city, zipcode = customer_data
 
         new_customer = Customer(name, email, street, city, zipcode)
-        print(new_customer)
         customers.append(new_customer)
-
+    
     return customers
 
 
